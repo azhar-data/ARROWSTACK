@@ -1,0 +1,77 @@
+{
+  "selected_model": "Gradient boosting",
+  "selection_metric": "lowest mean 5-fold group CV RMSE on training rows",
+  "seed": 42,
+  "rows": 398,
+  "train_rows": 321,
+  "test_rows": 77,
+  "train_groups": 244,
+  "test_groups": 61,
+  "group_key": "exact whitespace-normalized lowercase car name",
+  "train_test_group_overlap": 0,
+  "cv_folds": 5,
+  "test_group_fraction_requested": 0.2,
+  "missing_horsepower": 6,
+  "exact_duplicate_rows": 0,
+  "test_metrics": {
+    "mae_mpg": 1.9396998346144216,
+    "mse_mpg_squared": 7.233304687671605,
+    "rmse_mpg": 2.689480375030018,
+    "r2": 0.8849239817817773
+  },
+  "test_baseline_metrics": {
+    "mae_mpg": 6.47256544078974,
+    "mse_mpg_squared": 63.28789731788769,
+    "rmse_mpg": 7.955369087470907,
+    "r2": -0.006859179754892031
+  },
+  "features": [
+    "cylinders",
+    "displacement",
+    "horsepower",
+    "weight",
+    "acceleration",
+    "model_year",
+    "origin"
+  ],
+  "excluded": [
+    "source_row",
+    "car_name",
+    "mpg"
+  ],
+  "numeric_training_ranges": {
+    "cylinders": {
+      "min": 3.0,
+      "max": 8.0
+    },
+    "displacement": {
+      "min": 68.0,
+      "max": 455.0
+    },
+    "horsepower": {
+      "min": 46.0,
+      "max": 225.0
+    },
+    "weight": {
+      "min": 1755.0,
+      "max": 5140.0
+    },
+    "acceleration": {
+      "min": 8.0,
+      "max": 24.8
+    },
+    "model_year": {
+      "min": 70.0,
+      "max": 82.0
+    }
+  },
+  "raw_sha256": "48b830e11feee5572525f8f1691ddb9d38d3d7b7063edcd8fca672c2a5e17d8d",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "model_trained_on": "training partition only; not refitted on holdout"
+}

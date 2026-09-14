@@ -1,0 +1,4 @@
+-r requirements.txt
+jupyterlab>=4.3,<5
+nbconvert>=7.16,<8
+ipykernel>=6.29,<7

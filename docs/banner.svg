@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-labelledby="title desc">
+  <title id="title">Arrowstack Data Science Projects</title>
+  <desc id="desc">Exploratory data analysis and an end-to-end regression pipeline, prepared for Azhar.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10263d"/>
+      <stop offset="1" stop-color="#174b5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="300" rx="20" fill="url(#bg)"/>
+  <path d="M895 0v300M985 0v300M1075 0v300M1165 0v300M855 60h425M855 150h425M855 240h425" stroke="#b7e6e0" stroke-opacity=".08"/>
+  <rect x="54" y="43" width="5" height="26" rx="2" fill="#6fe5d2"/>
+  <text x="75" y="63" font-family="Arial,sans-serif" font-size="19" letter-spacing="4" fill="#a9e9e0">ARROWSTACK</text>
+  <text x="54" y="137" font-family="Arial,sans-serif" font-size="53" font-weight="700" fill="#ffffff">Data Science Projects</text>
+  <text x="57" y="177" font-family="Arial,sans-serif" font-size="21" fill="#c4d7e3">Python analysis, model evaluation, and reproducible evidence.</text>
+  <rect x="56" y="215" width="154" height="36" rx="18" fill="#6fe5d2" fill-opacity=".13"/>
+  <text x="78" y="239" font-family="Arial,sans-serif" font-size="15" fill="#c4fff6">01 / Kaggle EDA</text>
+  <rect x="223" y="215" width="199" height="36" rx="18" fill="#ffffff" fill-opacity=".08"/>
+  <text x="245" y="239" font-family="Arial,sans-serif" font-size="15" fill="#e7eff6">02 / Regression pipeline</text>
+  <text x="1199" y="260" text-anchor="end" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#a9cbc9">AZHAR</text>
+  <circle cx="1060" cy="109" r="44" fill="none" stroke="#6fe5d2" stroke-opacity=".4" stroke-width="2"/>
+  <circle cx="1060" cy="109" r="26" fill="none" stroke="#6fe5d2" stroke-opacity=".18" stroke-width="12"/>
+  <path d="M1053 118l22-22m-17 0h17v17" fill="none" stroke="#9af7e7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

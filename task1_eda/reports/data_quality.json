@@ -1,0 +1,33 @@
+{
+  "raw_rows": 344,
+  "clean_rows": 344,
+  "rows_removed": 0,
+  "exact_duplicate_measurement_rows": 0,
+  "known_missing_tokens_normalized": {
+    "species": 0,
+    "island": 0,
+    "sex": 1
+  },
+  "missing_before": {
+    "species": 0,
+    "island": 0,
+    "culmen_length_mm": 2,
+    "culmen_depth_mm": 2,
+    "flipper_length_mm": 2,
+    "body_mass_g": 2,
+    "sex": 10
+  },
+  "missing_after": {
+    "source_row": 0,
+    "species": 0,
+    "island": 0,
+    "bill_length_mm": 2,
+    "bill_depth_mm": 2,
+    "flipper_length_mm": 2,
+    "body_mass_g": 2,
+    "sex": 11
+  },
+  "complete_case_rows": 333,
+  "imputed_values": 0,
+  "raw_sha256": "aa728597b2228a2637e39c6f08e40a80971f4cdac7faf7bc21ff4481ee3e3ae9"
+}

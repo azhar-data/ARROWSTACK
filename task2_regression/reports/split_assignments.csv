@@ -1,0 +1,399 @@
+source_row,car_name,split
+1,chevrolet chevelle malibu,train
+2,buick skylark 320,train
+3,plymouth satellite,train
+4,amc rebel sst,train
+5,ford torino,train
+6,ford galaxie 500,train
+7,chevrolet impala,train
+8,plymouth fury iii,train
+9,pontiac catalina,train
+10,amc ambassador dpl,train
+11,dodge challenger se,test
+12,plymouth 'cuda 340,train
+13,chevrolet monte carlo,test
+14,buick estate wagon (sw),train
+15,toyota corona mark ii,train
+16,plymouth duster,train
+17,amc hornet,train
+18,ford maverick,train
+19,datsun pl510,train
+20,volkswagen 1131 deluxe sedan,train
+21,peugeot 504,train
+22,audi 100 ls,train
+23,saab 99e,train
+24,bmw 2002,train
+25,amc gremlin,test
+26,ford f250,train
+27,chevy c20,train
+28,dodge d200,train
+29,hi 1200d,train
+30,datsun pl510,train
+31,chevrolet vega 2300,train
+32,toyota corona,test
+33,ford pinto,train
+34,amc gremlin,test
+35,plymouth satellite custom,test
+36,chevrolet chevelle malibu,train
+37,ford torino 500,train
+38,amc matador,train
+39,chevrolet impala,train
+40,pontiac catalina brougham,train
+41,ford galaxie 500,train
+42,plymouth fury iii,train
+43,dodge monaco (sw),test
+44,ford country squire (sw),train
+45,pontiac safari (sw),train
+46,amc hornet sportabout (sw),test
+47,chevrolet vega (sw),train
+48,pontiac firebird,train
+49,ford mustang,train
+50,mercury capri 2000,train
+51,opel 1900,train
+52,peugeot 304,train
+53,fiat 124b,train
+54,toyota corolla 1200,train
+55,datsun 1200,test
+56,volkswagen model 111,test
+57,plymouth cricket,test
+58,toyota corona hardtop,train
+59,dodge colt hardtop,train
+60,volkswagen type 3,train
+61,chevrolet vega,test
+62,ford pinto runabout,train
+63,chevrolet impala,train
+64,pontiac catalina,train
+65,plymouth fury iii,train
+66,ford galaxie 500,train
+67,amc ambassador sst,train
+68,mercury marquis,train
+69,buick lesabre custom,train
+70,oldsmobile delta 88 royale,train
+71,chrysler newport royal,train
+72,mazda rx2 coupe,train
+73,amc matador (sw),train
+74,chevrolet chevelle concours (sw),train
+75,ford gran torino (sw),test
+76,plymouth satellite custom (sw),test
+77,volvo 145e (sw),train
+78,volkswagen 411 (sw),test
+79,peugeot 504 (sw),train
+80,renault 12 (sw),test
+81,ford pinto (sw),test
+82,datsun 510 (sw),train
+83,toyouta corona mark ii (sw),train
+84,dodge colt (sw),test
+85,toyota corolla 1600 (sw),train
+86,buick century 350,test
+87,amc matador,train
+88,chevrolet malibu,train
+89,ford gran torino,train
+90,dodge coronet custom,test
+91,mercury marquis brougham,test
+92,chevrolet caprice classic,train
+93,ford ltd,train
+94,plymouth fury gran sedan,train
+95,chrysler new yorker brougham,train
+96,buick electra 225 custom,train
+97,amc ambassador brougham,train
+98,plymouth valiant,train
+99,chevrolet nova custom,train
+100,amc hornet,train
+101,ford maverick,train
+102,plymouth duster,train
+103,volkswagen super beetle,train
+104,chevrolet impala,train
+105,ford country,train
+106,plymouth custom suburb,train
+107,oldsmobile vista cruiser,train
+108,amc gremlin,test
+109,toyota carina,train
+110,chevrolet vega,test
+111,datsun 610,train
+112,maxda rx3,train
+113,ford pinto,train
+114,mercury capri v6,train
+115,fiat 124 sport coupe,train
+116,chevrolet monte carlo s,train
+117,pontiac grand prix,test
+118,fiat 128,train
+119,opel manta,test
+120,audi 100ls,test
+121,volvo 144ea,test
+122,dodge dart custom,train
+123,saab 99le,train
+124,toyota mark ii,train
+125,oldsmobile omega,train
+126,plymouth duster,train
+127,ford maverick,train
+128,amc hornet,train
+129,chevrolet nova,train
+130,datsun b210,test
+131,ford pinto,train
+132,toyota corolla 1200,train
+133,chevrolet vega,test
+134,chevrolet chevelle malibu classic,train
+135,amc matador,train
+136,plymouth satellite sebring,train
+137,ford gran torino,train
+138,buick century luxus (sw),train
+139,dodge coronet custom (sw),train
+140,ford gran torino (sw),test
+141,amc matador (sw),train
+142,audi fox,train
+143,volkswagen dasher,train
+144,opel manta,test
+145,toyota corona,test
+146,datsun 710,train
+147,dodge colt,train
+148,fiat 128,train
+149,fiat 124 tc,train
+150,honda civic,test
+151,subaru,train
+152,fiat x1.9,train
+153,plymouth valiant custom,train
+154,chevrolet nova,train
+155,mercury monarch,test
+156,ford maverick,train
+157,pontiac catalina,train
+158,chevrolet bel air,test
+159,plymouth grand fury,train
+160,ford ltd,train
+161,buick century,test
+162,chevroelt chevelle malibu,train
+163,amc matador,train
+164,plymouth fury,test
+165,buick skyhawk,train
+166,chevrolet monza 2+2,test
+167,ford mustang ii,test
+168,toyota corolla,train
+169,ford pinto,train
+170,amc gremlin,test
+171,pontiac astro,test
+172,toyota corona,test
+173,volkswagen dasher,train
+174,datsun 710,train
+175,ford pinto,train
+176,volkswagen rabbit,train
+177,amc pacer,train
+178,audi 100ls,test
+179,peugeot 504,train
+180,volvo 244dl,train
+181,saab 99le,train
+182,honda civic cvcc,train
+183,fiat 131,test
+184,opel 1900,train
+185,capri ii,train
+186,dodge colt,train
+187,renault 12tl,train
+188,chevrolet chevelle malibu classic,train
+189,dodge coronet brougham,train
+190,amc matador,train
+191,ford gran torino,train
+192,plymouth valiant,train
+193,chevrolet nova,train
+194,ford maverick,train
+195,amc hornet,train
+196,chevrolet chevette,train
+197,chevrolet woody,train
+198,vw rabbit,test
+199,honda civic,test
+200,dodge aspen se,train
+201,ford granada ghia,train
+202,pontiac ventura sj,train
+203,amc pacer d/l,train
+204,volkswagen rabbit,train
+205,datsun b-210,train
+206,toyota corolla,train
+207,ford pinto,train
+208,volvo 245,train
+209,plymouth volare premier v8,test
+210,peugeot 504,train
+211,toyota mark ii,train
+212,mercedes-benz 280s,train
+213,cadillac seville,train
+214,chevy c10,train
+215,ford f108,train
+216,dodge d100,test
+217,honda accord cvcc,train
+218,buick opel isuzu deluxe,train
+219,renault 5 gtl,test
+220,plymouth arrow gs,train
+221,datsun f-10 hatchback,train
+222,chevrolet caprice classic,train
+223,oldsmobile cutlass supreme,train
+224,dodge monaco brougham,train
+225,mercury cougar brougham,train
+226,chevrolet concours,train
+227,buick skylark,train
+228,plymouth volare custom,train
+229,ford granada,train
+230,pontiac grand prix lj,train
+231,chevrolet monte carlo landau,train
+232,chrysler cordoba,train
+233,ford thunderbird,train
+234,volkswagen rabbit custom,train
+235,pontiac sunbird coupe,train
+236,toyota corolla liftback,train
+237,ford mustang ii 2+2,train
+238,chevrolet chevette,train
+239,dodge colt m/m,train
+240,subaru dl,train
+241,volkswagen dasher,train
+242,datsun 810,train
+243,bmw 320i,train
+244,mazda rx-4,train
+245,volkswagen rabbit custom diesel,test
+246,ford fiesta,train
+247,mazda glc deluxe,test
+248,datsun b210 gx,train
+249,honda civic cvcc,train
+250,oldsmobile cutlass salon brougham,train
+251,dodge diplomat,train
+252,mercury monarch ghia,train
+253,pontiac phoenix lj,train
+254,chevrolet malibu,train
+255,ford fairmont (auto),train
+256,ford fairmont (man),train
+257,plymouth volare,train
+258,amc concord,train
+259,buick century special,train
+260,mercury zephyr,train
+261,dodge aspen,train
+262,amc concord d/l,train
+263,chevrolet monte carlo landau,train
+264,buick regal sport coupe (turbo),test
+265,ford futura,test
+266,dodge magnum xe,train
+267,chevrolet chevette,train
+268,toyota corona,test
+269,datsun 510,train
+270,dodge omni,test
+271,toyota celica gt liftback,train
+272,plymouth sapporo,train
+273,oldsmobile starfire sx,train
+274,datsun 200-sx,test
+275,audi 5000,train
+276,volvo 264gl,train
+277,saab 99gle,train
+278,peugeot 604sl,train
+279,volkswagen scirocco,train
+280,honda accord lx,train
+281,pontiac lemans v6,test
+282,mercury zephyr 6,train
+283,ford fairmont 4,train
+284,amc concord dl 6,train
+285,dodge aspen 6,train
+286,chevrolet caprice classic,train
+287,ford ltd landau,train
+288,mercury grand marquis,train
+289,dodge st. regis,train
+290,buick estate wagon (sw),train
+291,ford country squire (sw),train
+292,chevrolet malibu classic (sw),train
+293,chrysler lebaron town @ country (sw),test
+294,vw rabbit custom,train
+295,maxda glc deluxe,train
+296,dodge colt hatchback custom,train
+297,amc spirit dl,train
+298,mercedes benz 300d,train
+299,cadillac eldorado,train
+300,peugeot 504,train
+301,oldsmobile cutlass salon brougham,train
+302,plymouth horizon,train
+303,plymouth horizon tc3,train
+304,datsun 210,train
+305,fiat strada custom,train
+306,buick skylark limited,train
+307,chevrolet citation,train
+308,oldsmobile omega brougham,train
+309,pontiac phoenix,train
+310,vw rabbit,test
+311,toyota corolla tercel,train
+312,chevrolet chevette,train
+313,datsun 310,test
+314,chevrolet citation,train
+315,ford fairmont,train
+316,amc concord,train
+317,dodge aspen,train
+318,audi 4000,train
+319,toyota corona liftback,train
+320,mazda 626,train
+321,datsun 510 hatchback,train
+322,toyota corolla,train
+323,mazda glc,test
+324,dodge colt,train
+325,datsun 210,train
+326,vw rabbit c (diesel),train
+327,vw dasher (diesel),train
+328,audi 5000s (diesel),train
+329,mercedes-benz 240d,test
+330,honda civic 1500 gl,train
+331,renault lecar deluxe,train
+332,subaru dl,train
+333,vokswagen rabbit,test
+334,datsun 280-zx,train
+335,mazda rx-7 gs,train
+336,triumph tr7 coupe,train
+337,ford mustang cobra,train
+338,honda accord,train
+339,plymouth reliant,test
+340,buick skylark,train
+341,dodge aries wagon (sw),train
+342,chevrolet citation,train
+343,plymouth reliant,test
+344,toyota starlet,train
+345,plymouth champ,train
+346,honda civic 1300,train
+347,subaru,train
+348,datsun 210 mpg,train
+349,toyota tercel,train
+350,mazda glc 4,train
+351,plymouth horizon 4,train
+352,ford escort 4w,train
+353,ford escort 2h,train
+354,volkswagen jetta,test
+355,renault 18i,test
+356,honda prelude,train
+357,toyota corolla,train
+358,datsun 200sx,test
+359,mazda 626,train
+360,peugeot 505s turbo diesel,test
+361,volvo diesel,train
+362,toyota cressida,train
+363,datsun 810 maxima,test
+364,buick century,test
+365,oldsmobile cutlass ls,train
+366,ford granada gl,train
+367,chrysler lebaron salon,train
+368,chevrolet cavalier,test
+369,chevrolet cavalier wagon,train
+370,chevrolet cavalier 2-door,test
+371,pontiac j2000 se hatchback,train
+372,dodge aries se,train
+373,pontiac phoenix,train
+374,ford fairmont futura,train
+375,amc concord dl,test
+376,volkswagen rabbit l,train
+377,mazda glc custom l,train
+378,mazda glc custom,train
+379,plymouth horizon miser,train
+380,mercury lynx l,train
+381,nissan stanza xe,train
+382,honda accord,train
+383,toyota corolla,train
+384,honda civic,test
+385,honda civic (auto),train
+386,datsun 310 gx,train
+387,buick century limited,train
+388,oldsmobile cutlass ciera (diesel),train
+389,chrysler lebaron medallion,train
+390,ford granada l,test
+391,toyota celica gt,train
+392,dodge charger 2.2,train
+393,chevrolet camaro,train
+394,ford mustang gl,train
+395,vw pickup,train
+396,dodge rampage,test
+397,ford ranger,train
+398,chevy s-10,train

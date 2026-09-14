@@ -1,0 +1,4 @@
+cylinders,displacement,horsepower,weight,acceleration,model_year,origin,predicted_mpg
+4,120,88.0,2500,15.5,79,usa,28.972743783621336
+4,97,67.0,2100,17.0,80,japan,35.87437695158513
+6,200,,3100,16.0,78,usa,19.966102027743357

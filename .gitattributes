@@ -1,0 +1,9 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.ipynb text eol=lf
+# Preserve exact downloaded bytes for the integrity checks, including on Windows.
+task1_eda/data/raw/* -text -whitespace
+task2_regression/data/raw/* -text -whitespace
+*.png binary

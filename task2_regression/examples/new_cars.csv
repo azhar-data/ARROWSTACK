@@ -1,0 +1,4 @@
+cylinders,displacement,horsepower,weight,acceleration,model_year,origin
+4,120,88,2500,15.5,79,usa
+4,97,67,2100,17.0,80,japan
+6,200,,3100,16.0,78,usa

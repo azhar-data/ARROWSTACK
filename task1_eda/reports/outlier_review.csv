@@ -1,0 +1,13 @@
+species,feature,lower_fence,upper_fence,flagged_rows
+Adelie,bill_length_mm,30.75,46.75,0
+Adelie,bill_depth_mm,15.25,21.25,1
+Adelie,flipper_length_mm,172.5,208.5,2
+Adelie,body_mass_g,2375.0,4975.0,0
+Chinstrap,bill_length_mm,39.2625,58.16250000000001,0
+Chinstrap,bill_depth_mm,14.650000000000002,22.249999999999996,0
+Chinstrap,flipper_length_mm,176.0,216.0,0
+Chinstrap,body_mass_g,2793.75,4643.75,2
+Gentoo,bill_length_mm,38.925,55.925,1
+Gentoo,bill_depth_mm,11.95,17.95,0
+Gentoo,flipper_length_mm,198.5,234.5,0
+Gentoo,body_mass_g,3500.0,6700.0,0
