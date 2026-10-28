@@ -4,17 +4,17 @@
 
 Two reproducible Python projects: **Kaggle exploratory data analysis** and an
 **end-to-end predictive regression pipeline**. Prepared for **Azhar** with source
-data, executed notebooks, measured results, figures, documentation, and tests.
+data, standalone Python scripts, measured results, figures, documentation, and tests.
 
 [Quick start](#quick-start) · [Task 1](task1_eda/README.md) · [Task 2](task2_regression/README.md)
 · [Roman Urdu beginner guide](docs/BEGINNER_GUIDE.md) · [Demo guide](docs/DEMO_GUIDE.md)
 
 ## Projects
 
-| Project | Dataset | What it demonstrates | Open the work |
+| Project | Dataset | What it demonstrates | Python entry point |
 | --- | --- | --- | --- |
-| 01 · Comprehensive EDA | Kaggle Palmer Penguins, 344 observations | Quality checks, missingness, group statistics, correlations, outlier review, bootstrap intervals, responsible conclusions | [Notebook](task1_eda/notebooks/penguins_eda.ipynb) · [Report](task1_eda/reports/final_report.md) |
-| 02 · Predictive regression | UCI Auto MPG, 398 records | Group-aware splitting, preprocessing pipelines, five-fold CV, model comparison, holdout metrics, serialization, prediction CLI | [Notebook](task2_regression/notebooks/auto_mpg_regression.ipynb) · [Report](task2_regression/reports/final_report.md) |
+| 01 · Comprehensive EDA | Kaggle Palmer Penguins, 344 observations | Quality checks, missingness, group statistics, correlations, outlier review, bootstrap intervals, responsible conclusions | [analysis.py](task1_eda/analysis.py) |
+| 02 · Predictive regression | UCI Auto MPG, 398 records | Group-aware splitting, preprocessing pipelines, five-fold CV, model comparison, holdout metrics, serialization, prediction CLI | [train.py](task2_regression/train.py) |
 
 **Scope note:** these projects implement the first two titles in the supplied
 **Data Science dashboard screenshot**. The separate Churn/Retail handbook discussed
@@ -48,7 +48,7 @@ with the **321 training records**.
 | RMSE (mpg) | 2.689 | 7.955 |
 | R² | 0.885 | −0.007 |
 
-These are actual outputs from the pinned environment, not example scores.
+These are recorded outputs from the pinned environment, not example scores.
 R² is **not classification accuracy**. The small historical holdout does not
 establish performance for modern cars. [Full metric evidence](task2_regression/reports/metrics.json).
 
@@ -68,6 +68,7 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe run_all.py
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe scripts/verify_deliverables.py
 ```
 
 Using the virtual environment's Python directly avoids activation-policy issues.
@@ -81,15 +82,13 @@ python3.12 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python run_all.py
 .venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python scripts/verify_deliverables.py
 ```
 
 Both projects run on a CPU. Run commands from the repository root. After installing
-dependencies, ordinary analysis, training, prediction, and tests work offline.
+dependencies, analysis, training, prediction, and tests work offline.
 
 ### Run a single task or predict
-
-The commands below assume your selected `python` uses the installed environment.
-On Windows you can replace `python` with `.\.venv\Scripts\python.exe`.
 
 ```bash
 python -m task1_eda.analysis
@@ -103,43 +102,23 @@ Training generates `task2_regression/models/auto_mpg_pipeline.joblib` locally.
 The binary is excluded from Git; data, code, metadata, and results are versioned.
 Only load joblib files that you generated or explicitly trust.
 
-## Notebooks
-
-The committed notebooks already contain executed outputs and can be read on GitHub.
-To work in Jupyter or a VS Code notebook kernel:
-
-```bash
-python -m pip install -r requirements-notebooks.txt
-python -m jupyterlab
-```
-
-Open a task notebook and select the environment you installed. Run all cells in
-order. For a dependency-light rebuild of the supplied notebooks and their outputs:
-
-```bash
-python scripts/build_notebooks.py
-```
-
-The builder executes their plain-Python cells and captures text/figures; it is not
-a general Jupyter kernel. No widgets or notebook magics are used. Full Jupyter
-execution is also supported with the optional notebook dependencies.
-
-## Repository map
+## Python-only repository map
 
 | Location | Contents |
 | --- | --- |
-| `task1_eda/` | EDA source, Kaggle data, cleaned data, executed notebook, reports, figures |
-| `task2_regression/` | Training/prediction source, UCI data, executed notebook, split evidence, metrics, figures |
-| `docs/` | Sources/licenses, scope, beginner walkthrough, demonstration guide, validation record |
-| `tests/` | 20 offline unit/integration checks |
-| `scripts/` | Rebuild and execute notebooks, verify deliverables |
+| `task1_eda/` | EDA source, Kaggle data, cleaned data, reports, figures |
+| `task2_regression/` | Training/prediction source, UCI data, split evidence, metrics, figures |
+| `docs/` | Sources, scope, beginner walkthrough, demonstration guide, validation record |
+| `tests/` | Offline unit/integration checks |
+| `scripts/verify_deliverables.py` | Checks local links, Python entry points, figures, and metrics |
 | `run_all.py` | Reproduce both projects |
 | `requirements.txt` | Pinned core dependencies |
 | `Data Analysis/` | Existing NumPy/Pandas property-data exercises, preserved unchanged |
 
-The new dependency pins and validation cover the two new tasks, not the older
-exercises. Raw data hashes, schema validation, group disjointness, training-only
-imputation, metric reconciliation, and serialization are tested. See
+The repository contains regular Python source files (`.py`) and no Jupyter notebooks.
+The existing `Data Analysis/` exercises and included datasets are preserved. Raw
+data hashes, schema validation, group disjointness, training-only imputation, metric
+reconciliation, and model serialization are covered by tests. See
 [validation evidence](docs/VALIDATION.md).
 
 ## Sources and responsible interpretation

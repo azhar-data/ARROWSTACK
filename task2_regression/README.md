@@ -3,7 +3,7 @@
 Predict **Auto MPG** fuel efficiency from seven vehicle attributes with
 training-only preprocessing, group-aware evaluation, and a reproducible prediction CLI.
 
-[Executed notebook](notebooks/auto_mpg_regression.ipynb) · [Final report](reports/final_report.md)
+[Python source](train.py) · [Final report](reports/final_report.md)
 · [Measured metrics](reports/metrics.json) · [Data dictionary](docs/data_dictionary.md)
 
 ## X and y

@@ -3,7 +3,7 @@
 Explore the **Palmer Penguins** dataset through explicit questions, quality
 checks, grouped statistics, figures, and cautious interpretation.
 
-[Executed notebook](notebooks/penguins_eda.ipynb) · [Final report](reports/final_report.md)
+[Python source](analysis.py) · [Final report](reports/final_report.md)
 · [Data dictionary](docs/data_dictionary.md) · [Source attribution](../docs/DATA_SOURCES.md)
 
 ## Questions
