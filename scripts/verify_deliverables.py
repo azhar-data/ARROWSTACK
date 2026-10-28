@@ -1,6 +1,4 @@
-"""Check committed report/notebook structure and local Markdown links offline."""
-import base64
-import io
+"""Verify Python-only project links, figures, and recorded regression metrics offline."""
 import json
 from pathlib import Path
 import re
@@ -26,48 +24,57 @@ def verify():
                 continue
             relative = unquote(target.split("#")[0])
             if not (path.parent / relative).exists():
-                problems.append(f"Broken local link: {path.relative_to(ROOT)} → {target}")
+                problems.append(f"Broken local link: {path.relative_to(ROOT)} -> {target}")
             checked_links += 1
-    notebook_results = []
-    notebooks = [ROOT / "task1_eda/notebooks/penguins_eda.ipynb",
-                 ROOT / "task2_regression/notebooks/auto_mpg_regression.ipynb"]
-    for path in notebooks:
-        notebook = json.loads(path.read_text(encoding="utf-8"))
-        assert notebook["nbformat"] == 4 and notebook["nbformat_minor"] == 5
-        count, figures, ids = 0, 0, set()
-        for cell in notebook["cells"]:
-            assert cell["id"] not in ids
-            ids.add(cell["id"])
-            assert isinstance(cell["source"], list)
-            if cell["cell_type"] == "code":
-                count += 1
-                assert cell["execution_count"] == count
-                compile("".join(cell["source"]), str(path), "exec")
-                for output in cell["outputs"]:
-                    assert output["output_type"] != "error"
-                    if "image/png" in output.get("data", {}):
-                        image_bytes = base64.b64decode(output["data"]["image/png"], validate=True)
-                        with Image.open(io.BytesIO(image_bytes)) as img:
-                            img.verify()
-                        figures += 1
-        notebook_results.append({"notebook": str(path.relative_to(ROOT)), "executed_cells": count, "embedded_figures": figures})
+
+    notebooks = list(ROOT.rglob("*.ipynb"))
+    if notebooks:
+        problems.append("Python-only repository contains notebook files: " +
+                        ", ".join(str(p.relative_to(ROOT)) for p in notebooks))
+
+    required_python = [
+        ROOT / "run_all.py",
+        ROOT / "task1_eda/analysis.py",
+        ROOT / "task2_regression/train.py",
+        ROOT / "task2_regression/predict.py",
+        ROOT / "tests/test_projects.py",
+    ]
+    for path in required_python:
+        if not path.is_file():
+            problems.append(f"Missing required Python file: {path.relative_to(ROOT)}")
+        else:
+            compile(path.read_text(encoding="utf-8"), str(path), "exec")
+
     figure_paths = []
     for directory in ("task1_eda", "task2_regression"):
         figure_paths.extend((ROOT / directory / "reports/figures").glob("*.png"))
-    assert len(figure_paths) == 7
+    if len(figure_paths) != 7:
+        problems.append(f"Expected 7 report figures, found {len(figure_paths)}")
     for path in figure_paths:
-        with Image.open(path) as img:
-            assert img.width >= 1000 and img.height >= 600
-            img.verify()
+        try:
+            with Image.open(path) as img:
+                if img.width < 1000 or img.height < 600:
+                    problems.append(f"Figure dimensions too small: {path.relative_to(ROOT)}")
+                img.verify()
+        except OSError as exc:
+            problems.append(f"Invalid figure {path.relative_to(ROOT)}: {exc}")
+
     ET.parse(ROOT / "docs/banner.svg")
-    metrics = json.loads((ROOT / "task2_regression/reports/metrics.json").read_text())
-    readme = (ROOT / "README.md").read_text()
+    metrics = json.loads((ROOT / "task2_regression/reports/metrics.json").read_text(encoding="utf-8"))
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
     for metric in metrics["test_metrics"].values():
-        assert f"{metric:.3f}" in readme
+        if f"{metric:.3f}" not in readme:
+            problems.append(f"README does not contain recorded metric {metric:.3f}")
+
     if problems:
         raise AssertionError("\n".join(problems))
-    print(json.dumps({"local_links_checked": checked_links, "notebooks": notebook_results,
-                      "figure_files_verified": len(figure_paths), "readme_metrics_reconciled": True}, indent=2))
+    print(json.dumps({
+        "local_links_checked": checked_links,
+        "python_entry_points_compiled": len(required_python),
+        "notebook_files_found": 0,
+        "figure_files_verified": len(figure_paths),
+        "readme_metrics_reconciled": True,
+    }, indent=2))
 
 
 if __name__ == "__main__":
